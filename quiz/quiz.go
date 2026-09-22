@@ -55,4 +55,9 @@ func ask(s score, question question) score {
 
 func main() {
 	// TODO: Write a quiz program
+	s := score(0)
+	for _, question := range questions() {
+		s = ask(s, question)
+	}
+	fmt.Println(s)
 }
